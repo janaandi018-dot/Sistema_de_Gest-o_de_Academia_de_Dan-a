@@ -1,5 +1,13 @@
-CREATE DATABASE sistema_de_gestao_de_academia_de_danca;
-USE sistema_de_gestao_de_academia_de_danca;
+CREATE DATABASE sistema_de_gestão_de_academia_de_dança;
+USE sistema_de_gestão_de_academia_de_dança;
+
+-- Tabela PROFESSOR
+CREATE TABLE professor (
+    id_professor INT PRIMARY KEY,
+    nome VARCHAR(100),
+    especialidade VARCHAR(100),
+    telefone VARCHAR(20)
+);
 
 -- Tabela ALUNO
 CREATE TABLE aluno (
@@ -8,17 +16,9 @@ CREATE TABLE aluno (
     cpf VARCHAR(11),
     telefone VARCHAR(20),
     data_nascimento DATE
+);
 
-
--- Tabela PROFESSOR
-CREATE TABLE professor (
-    id_professor INT PRIMARY KEY,
-    nome VARCHAR(100),
-    especialidade VARCHAR(100),
-    telefone VARCHAR(20)
-
-
--- Tabela TURMA
+-- Tabela TURMA (referencia professor)
 CREATE TABLE turma (
     id_turma INT PRIMARY KEY,
     nome_turma VARCHAR(100),
@@ -26,9 +26,9 @@ CREATE TABLE turma (
     horario VARCHAR(20),
     id_professor INT,
     FOREIGN KEY (id_professor) REFERENCES professor(id_professor)
+);
 
-
--- Tabela MATRÍCULA
+-- Tabela MATRICULA (referencia aluno e turma)
 CREATE TABLE matricula (
     id_matricula INT PRIMARY KEY,
     data_matricula DATE,
@@ -36,18 +36,18 @@ CREATE TABLE matricula (
     id_turma INT,
     FOREIGN KEY (id_aluno) REFERENCES aluno(id_aluno),
     FOREIGN KEY (id_turma) REFERENCES turma(id_turma)
+);
 
-
--- Tabela PRESENÇA
+-- Tabela PRESENCA (referencia matricula)
 CREATE TABLE presenca (
     id_presenca INT PRIMARY KEY,
     data DATE,
     status VARCHAR(20),
     id_matricula INT,
     FOREIGN KEY (id_matricula) REFERENCES matricula(id_matricula)
+);
 
-
--- Tabela PAGAMENTO
+-- Tabela PAGAMENTO (referencia matricula)
 CREATE TABLE pagamento (
     id_pagamento INT PRIMARY KEY,
     data_pagamento DATE,
@@ -55,3 +55,4 @@ CREATE TABLE pagamento (
     forma_pagamento VARCHAR(50),
     id_matricula INT,
     FOREIGN KEY (id_matricula) REFERENCES matricula(id_matricula)
+);
