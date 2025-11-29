@@ -1,5 +1,5 @@
-CREATE DATABASE sistema_de_gestão_de_academia_de_dança;
-USE sistema_de_gestão_de_academia_de_dança;
+CREATE DATABASE sistema_de_gestao_de_academia_de_danca;
+USE sistema_de_gestao_de_academia_de_danca;
 
 -- Tabela PROFESSOR
 CREATE TABLE professor (
