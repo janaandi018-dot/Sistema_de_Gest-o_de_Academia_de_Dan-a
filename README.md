@@ -5,15 +5,15 @@ Este repositório contém a implementação do banco de dados do sistema da Acad
 
 Arquivos do Projeto
 
-01_create_database.sql** – Criação das tabelas.
+01_create_database.sql – Criação das tabelas.
 
-02_insert.sql** – Povoa as tabelas com dados de exemplo.
+02_insert.sql – Povoa as tabelas com dados de exemplo.
 
-03_selects.sql** – Consultas SQL (SELECT com JOIN, WHERE, ORDER BY, LIMIT).
+03_selects.sql – Consultas SQL (SELECT com JOIN, WHERE, ORDER BY, LIMIT).
 
-04_updates.sql** – Atualizações de dados (UPDATE).
+04_updates.sql  – Atualizações de dados (UPDATE).
 
-05_deletes.sql** – Exclusões de dados (DELETE).
+05_deletes.sql – Exclusões de dados (DELETE).
 
 Tecnologias utilizadas
 MySQL Workbench  ou PostgreSQL + PGAdmin 
@@ -23,7 +23,7 @@ Objetivo: Praticar a manipulação de dados através da linguagem SQL, incluindo
 Como executar:
 
 1. Abra o Workbench / PGAdmin
-2. Execute o script *
+2. Execute o script 
 *01_create_database.sql*
 3. Depois execute os scripts de INSERT  
 4. Rode os SELECTs, UPDATEs e DELETEs conforme desejar
