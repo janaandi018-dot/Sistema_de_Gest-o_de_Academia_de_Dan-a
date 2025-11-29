@@ -9,7 +9,8 @@ INSERT INTO professor VALUES
 (1, 'Marcos Lima', 'Ballet', '99999-4444'),
 (2, 'Juliana Rocha', 'Hip Hop', '98888-5555');
 
--- INSERT INTO turma VALUES
+-- Turma
+ INSERT INTO turma VALUES
 (1, 'Ballet Infantil', 'Ballet', '14:00', 1),
 (2, 'Hip Hop Teens', 'Hip Hop', '16:00', 2);
 
