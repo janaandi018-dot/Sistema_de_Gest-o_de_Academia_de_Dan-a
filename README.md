@@ -3,7 +3,7 @@
 
 -- Este repositório contém a implementação do banco de dados do sistema da Academia de Dança, seguindo o modelo lógico normalizado nas atividades anteriores.
 
--- ✔ Arquivos do Projeto
+-- Arquivos do Projeto
 
 -- 01_create_database.sql** – Criação das tabelas.
 -- 02_insert.sql** – Povoa as tabelas com dados de exemplo.
@@ -11,10 +11,10 @@
 -- 04_updates.sql** – Atualizações de dados (UPDATE).
 -- 05_deletes.sql** – Exclusões de dados (DELETE).
 
---  ✔ Tecnologias utilizadas
+--  Tecnologias utilizadas
 --  MySQL Workbench  ou PostgreSQL + PGAdmin 
 
---  ✔ Objetivo
+--  Objetivo
 -- Praticar a manipulação de dados através da linguagem SQL, incluindo DML e conceitos de integridade referencial.
 
 -- Como executar
